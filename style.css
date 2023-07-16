@@ -1,0 +1,239 @@
+/**GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root {
+    --primary: #161616;
+    --secondary:#80ba8e;
+    --text:#777777;
+    --gray: #828282;
+    --darkGray: #444;
+    --font-family: 'Roboto', sans-serif;
+    --fontSize: 16px;
+    --transition: 0.4s ease;
+    --padding: 100px 0;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--text);
+    font-family: var(--font-family);
+    font-size: var(--fontSize);
+    line-height: 1.6;
+    font-weight: 500;
+}
+ul {
+    list-style: none;
+}
+a:hover {
+    transition: var(--transition);
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+/**HEADER*/
+header {
+    background: url(img/header.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    width: 100%;
+    padding: 20px 0;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin:0 20px ;
+    letter-spacing: 2px;
+    text-shadow:  0 0 1px #000;
+}
+hgroup {
+    position: absolute;
+    top:30%;
+    text-align: center;
+}
+hgroup h1 {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+}
+hgroup h5 {
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    font-size: 3rem;
+}
+/**INTRO*/
+.intro {
+    padding: var(--padding
+    );
+    background: gainsboro;
+    text-align: center;
+}
+.intro h2 {
+    font-size: var(--fontSize);
+    padding-bottom: 30px;
+}
+.intro article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.intro hr {
+    border: 1px solid black;
+}
+.intro article div {
+    flex: 0 0 31%;
+}
+.intro h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.intro i {
+    font-size: 5rem;
+    color: #bbb;
+    margin-top: 30px;
+}
+.intro p {
+    padding: 30px 0;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+ button {
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    background: var(--secondary
+    );
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+ }
+ button:hover {
+    background-color: #1609;
+    cursor: pointer;
+    transition: var(--transition
+    );
+ }
+/***BLOG*/
+.blog {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog article {
+    flex: 0 0 48%;
+}
+.blog img {
+    display: block;
+    width: 100%;
+}
+.blog a {
+    color: var(--secondary);
+    text-decoration: none;
+} 
+.blog a:hover {
+    color: var(--darkGray);
+}
+.blog p {
+    font-weight: 300;
+    padding: 30px 0;
+    text-align: justify;
+}
+.blog article {
+    margin-bottom: 30px;
+}
+.blog h3 {
+    font-weight: 300;
+    font-size: 3rem;
+}
+/***BLOQUTE*/
+.blokquote {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/img4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blokquote blockquote {
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 1.7rem;
+}
+/****FOTER**/
+footer {
+    background: var(--primary);
+    padding: var(--padding);
+    color: #fff;
+    text-align: center;
+}
+footer hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin: 50px auto;
+    background-color: var(--darkGray);
+}
+footer h2 {
+    font-size: 3rem;
+
+}
+footer h2+p {
+    color: var(--darkGray);
+    font-size: 2rem;
+    padding: 30px 0;
+}
+footer a {
+    color: var(--darkGray);
+    font-size: 2rem;
+    margin: 10px;
+}
+footer a:hover {
+    color: #fff;
+}
+footer .copy {
+   font-size: 0.9rem;
+   color: var(--darkGray);
+}
+/**Responsive*/
+@media(max-width:767px){
+    nav ul li a {
+        margin: 0 5px;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+    hgroup h1 {
+        font-size: 3rem;
+    }
+    .container {
+        padding: 10px;
+    }
+    .intro article div, .blog article  {
+         flex: 0 0 100%;
+         margin-bottom: 30px;
+    }
+    
+}
